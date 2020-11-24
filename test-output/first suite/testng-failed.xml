@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [first suite]" parallel="tests">
+  <test thread-count="5" name="Test on FireFox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.voyager.qa.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="clickonMemberlinkTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.voyager.qa.testcases.HomePageTest -->
+      <class name="com.voyager.qa.testcases.LoginPageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="logoTest"/>
+        </methods>
+      </class> <!-- com.voyager.qa.testcases.LoginPageTests -->
+      <class name="com.voyager.qa.testcases.SearchMemberTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="validateSearchMemberTest"/>
+          <include name="setUp"/>
+          <include name="searchSingleMemberCountTest"/>
+        </methods>
+      </class> <!-- com.voyager.qa.testcases.SearchMemberTest -->
+    </classes>
+  </test> <!-- Test on FireFox(failed) -->
+  <test thread-count="5" name="Test on Chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.voyager.qa.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="clickonMemberlinkTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.voyager.qa.testcases.HomePageTest -->
+      <class name="com.voyager.qa.testcases.LoginPageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="logoTest"/>
+        </methods>
+      </class> <!-- com.voyager.qa.testcases.LoginPageTests -->
+      <class name="com.voyager.qa.testcases.SearchMemberTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="validateSearchMemberTest"/>
+          <include name="setUp"/>
+          <include name="searchSingleMemberCountTest"/>
+        </methods>
+      </class> <!-- com.voyager.qa.testcases.SearchMemberTest -->
+    </classes>
+  </test> <!-- Test on Chrome(failed) -->
+</suite> <!-- Failed suite [first suite] -->

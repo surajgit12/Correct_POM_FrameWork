@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Voyager_Application_Automation_Suite_Framework" parallel = "methods">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.voyager.qa.testcases.ViewMemberDetailsPageTest"/>
+      <class name="com.voyager.qa.testcases.LoginPageTests"/>
+      <class name="com.voyager.qa.testcases.HomePageTest"/>
+      <class name="com.voyager.qa.testcases.SearchMemberTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

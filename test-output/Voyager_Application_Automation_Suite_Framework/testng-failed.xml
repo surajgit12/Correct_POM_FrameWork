@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Voyager_Application_Automation_Suite_Framework]" parallel="methods">
+  <test thread-count="5" name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="com.voyager.qa.testcases.LoginPageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="logoTest"/>
+        </methods>
+      </class> <!-- com.voyager.qa.testcases.LoginPageTests -->
+      <class name="com.voyager.qa.testcases.SearchMemberTest">
+        <methods>
+          <include name="TearDown"/>
+          <include name="validateSearchMemberTest"/>
+          <include name="setUp"/>
+          <include name="searchSingleMemberCountTest"/>
+        </methods>
+      </class> <!-- com.voyager.qa.testcases.SearchMemberTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Voyager_Application_Automation_Suite_Framework] -->

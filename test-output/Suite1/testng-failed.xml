@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test thread-count="5" name="Test on Firefox(failed)" parallel="tests">
+    <parameter name="password" value="Jira@123"/>
+    <parameter name="browser" value="Firefox"/>
+    <parameter name="url" value="http://10.210.21.211:8080/Voyager-8.2.0/signIn.jsp"/>
+    <parameter name="username" value="SurajU"/>
+    <classes>
+      <class name="com.voyager.qa.testcases.LoginPageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="ParrallelaunchBrowser"/>
+          <include name="logoTest"/>
+        </methods>
+      </class> <!-- com.voyager.qa.testcases.LoginPageTests -->
+    </classes>
+  </test> <!-- Test on Firefox(failed) -->
+  <test thread-count="5" name="Test on chrome(failed)" parallel="tests">
+    <parameter name="password" value="Jira@123"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="http://10.210.21.211:8080/Voyager-8.2.0/signIn.jsp"/>
+    <parameter name="username" value="SurajU"/>
+    <classes>
+      <class name="com.voyager.qa.testcases.LoginPageTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="ParrallelaunchBrowser"/>
+          <include name="logoTest"/>
+        </methods>
+      </class> <!-- com.voyager.qa.testcases.LoginPageTests -->
+    </classes>
+  </test> <!-- Test on chrome(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
