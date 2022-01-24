@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.voyager.qa.testcases.SearchMemberTest">
+      <class name="com.voyager.qa.testcases.JenkinsDemo">
         <methods>
-          <include name="validateSearchMemberTest" invocation-numbers="0"/>
-          <include name="setUp"/>
-          <include name="searchSingleMemberCountTest" invocation-numbers="0"/>
+          <include name="OpenUrl"/>
         </methods>
-      </class> <!-- com.voyager.qa.testcases.SearchMemberTest -->
+      </class> <!-- com.voyager.qa.testcases.JenkinsDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
